@@ -2,22 +2,27 @@
 /.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/
-/tmp/
+/db/*.sqlite3*
 /vendor/
 /public/
 /covarage/
-# !/log/.keep
-# !/tmp/.keep
+
+# Ignore all logfiles and tempfiles.
+/log/
+/tmp/
+/spec/tmp/
+!/log/.keep
+!/tmp/.keep
 
 # Ignore uploaded files in development
 /storage/
-# !/storage/.keep
+!/storage/.keep
 
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# All DotEnv
-*.env
+# dotenv, dotenv-rails
+.env
+.env*.local
