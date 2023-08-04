@@ -25,4 +25,4 @@ jobs:
           bundle install
 
       - name: Run RuboCop and auto-correct offenses
-        run: bundle exec rubocop -a
+        run: bundle exec rubocop
