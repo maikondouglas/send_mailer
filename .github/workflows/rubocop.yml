@@ -3,8 +3,9 @@ name: RuboCop
 on:
   push:
     branches:
-      - 'feat/*' # Somente branches que começam com 'feat/'
-      - 'fix/*'  # Somente branches que começam com 'fix/'
+      - 'feat/*'
+      - 'fix/*'
+      - 'develop'
 
 jobs:
   rubocop:
