@@ -25,5 +25,5 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Run RuboCop and auto-correct offenses
+      - name: Run RuboCop and verify offenses
         run: bundle exec rubocop
