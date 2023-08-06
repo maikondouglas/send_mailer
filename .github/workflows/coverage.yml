@@ -1,22 +1,17 @@
 name: Coverage
 
 on:
-  push:
+  workflow_run:
     branches:
       - 'feat/*'
       - 'fix/*'
       - 'develop'
-  # workflow_run:
-  #   branches:
-  #     - 'feat/*'
-  #     - 'fix/*'
-  #     - 'develop'
-  #   workflows: ["UnitTests"]
-  #   types:
-  #     - completed
+    workflows: ["UnitTests"]
+    types:
+      - completed
 
 jobs:
-  test_coverage:
+  coverage:
     runs-on: ubuntu-latest
 
     steps:
