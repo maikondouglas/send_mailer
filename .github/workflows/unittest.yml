@@ -1,7 +1,13 @@
 name: UnitTests
 
+on:
+  push:
+    branches:
+      - 'feat/*'
+      - 'fix/*'
+      - 'develop'
+      - 'main'
 # Após o Pull do RuboCop descomentar essas linhas.
-# on:
 #   workflow_run:
 #     workflows: ["RuboCop"]
 #     types:
