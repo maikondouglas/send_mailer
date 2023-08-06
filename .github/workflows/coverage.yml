@@ -1,14 +1,19 @@
 name: Coverage
 
 on:
-  workflow_run:
+  push:
     branches:
       - 'feat/*'
       - 'fix/*'
       - 'develop'
-    # workflows: ["UnitTests"]
-    # types:
-    #   - completed
+  # workflow_run:
+  #   branches:
+  #     - 'feat/*'
+  #     - 'fix/*'
+  #     - 'develop'
+  #   workflows: ["UnitTests"]
+  #   types:
+  #     - completed
 
 jobs:
   test_coverage:
