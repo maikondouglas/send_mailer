@@ -2,11 +2,7 @@ name: Coverage
 
 on:
   workflow_run:
-    branches:
-      - 'feat/*'
-      - 'fix/*'
-      - 'develop'
-    workflows: ["UnitTests"]
+    workflows: [UnitTest]
     types:
       - completed
 
