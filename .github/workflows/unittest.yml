@@ -2,10 +2,8 @@ name: Unit Test
 
 on:
   workflow_run:
-    workflows: 
-      - RuboCop
-    types:
-      - completed
+    workflows: ["Lint Rubocop"]
+    types: [completed]
 
 jobs:
   unittest:

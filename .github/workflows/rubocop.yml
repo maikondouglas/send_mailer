@@ -1,17 +1,18 @@
-name: RuboCop
+name: Lint Rubocop
 
 on:
   push:
     branches:
       - 'feat/*'
       - 'fix/*'
-  pull_request:
-    branches:
       - 'develop'
+  pull_request:
+    types:
+      - opened
 
 jobs:
   rubocop:
-    name: Run RuboCop
+    name: Run Rubocop
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
