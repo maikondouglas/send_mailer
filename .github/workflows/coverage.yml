@@ -1,15 +1,12 @@
 name: Coverage
 
 on:
-  push:
+  workflow_run:
+    workflows: ['rubocop', 'unittest']
     branches:
       - 'feat/*'
       - 'fix/*'
-  pull_request:
-    branches:
       - 'develop'
-  workflow_run:
-    workflows: [UnitTest]
     types:
       - completed
 

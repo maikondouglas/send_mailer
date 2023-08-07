@@ -1,15 +1,12 @@
 name: UnitTest
 
 on:
-  push:
+  workflow_run:
+    workflows: ['rubocop']
     branches:
       - 'feat/*'
       - 'fix/*'
-  pull_request:
-    branches:
       - 'develop'
-  workflow_run:
-    workflows: [RuboCop]
     types:
       - completed
 
