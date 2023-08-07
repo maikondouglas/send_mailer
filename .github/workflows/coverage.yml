@@ -8,11 +8,10 @@ on:
   pull_request:
     branches:
       - 'develop'
-  # Após o Pull do unittest descomentar essas linhas.
-  # workflow_run:
-  #   workflows: [UnitTest]
-  #   types:
-  #     - completed
+  workflow_run:
+    workflows: [UnitTest]
+    types:
+      - completed
 
 jobs:
   coverage:

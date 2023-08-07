@@ -5,6 +5,8 @@ on:
     branches:
       - 'feat/*'
       - 'fix/*'
+  pull_request:
+    branches:
       - 'develop'
 
 jobs:
