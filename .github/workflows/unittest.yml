@@ -2,7 +2,7 @@ name: UnitTest
 
 on:
   workflow_run:
-    workflows: ['rubocop']
+    workflows: ['RuboCop']
     branches:
       - 'feat/*'
       - 'fix/*'
