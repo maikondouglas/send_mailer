@@ -1,9 +1,10 @@
-name: UnitTest
+name: Unit Test
 
 on:
   workflow_run:
-    workflows: ['RuboCop']
-    type:
+    workflows: 
+      - RuboCop
+    types:
       - completed
 
 jobs:

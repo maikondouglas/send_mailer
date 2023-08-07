@@ -2,8 +2,9 @@ name: Coverage
 
 on:
   workflow_run:
-    workflows: ['UnitTest']
-    type:
+    workflows: 
+      - Unit Test
+    types:
       - completed
 
 jobs:
