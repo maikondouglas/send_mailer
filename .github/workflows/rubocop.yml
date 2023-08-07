@@ -9,8 +9,6 @@ on:
     branches:
       - 'develop'
 
-  workflow_dispatch:
-
 jobs:
   rubocop:
     name: Run RuboCop

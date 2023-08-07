@@ -7,7 +7,7 @@ on:
       - 'feat/*'
       - 'fix/*'
       - 'develop'
-    types:
+    type:
       - completed
 
 jobs:

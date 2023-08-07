@@ -3,11 +3,11 @@ name: UnitTest
 on:
   workflow_run:
     workflows: ['RuboCop']
-    branches:
+    branches: 
       - 'feat/*'
       - 'fix/*'
       - 'develop'
-    types:
+    type:
       - completed
 
 jobs:
