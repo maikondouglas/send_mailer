@@ -1,9 +1,14 @@
 name: Unit Test
 
 on:
-  workflow_run:
-    workflows: ["Lint Rubocop"]
-    types: [completed]
+  push:
+    branches:
+      - 'feat/*'
+      - 'fix/*'
+      - 'develop'
+  pull_request:
+    types:
+      - opened
 
 jobs:
   unittest:
