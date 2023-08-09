@@ -1,0 +1,28 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/db/*.sqlite3*
+/vendor/
+/public/
+/coverage/
+
+# Ignore all logfiles and tempfiles.
+/log/
+/tmp/
+/spec/tmp/
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/storage/
+!/storage/.keep
+
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# dotenv, dotenv-rails
+.env
+.env*.local
